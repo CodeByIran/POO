@@ -1,4 +1,4 @@
-let poco = {
+let pocoA = {
     armazenamento: '128 GB',
     processador: '2x 2.3 GHz Kryo 470 Gold + 6x 1.8 GHz Kryo 470 Silver',
     ram: '6 GB',
@@ -12,7 +12,7 @@ let poco = {
     anoDeLancamento : ''
 }
 
-let pixel8 = {
+let pixelB = {
     armazenamento: '1024 GB',
     processador: '1x 3.0 GHz Cortex-X3 + 4x 2.45 GHz Cortex-A715 + 4x 2.15 GHz Cortex-A510',
     ram: '12 GB',
@@ -27,7 +27,7 @@ let pixel8 = {
 }
 
 
-let apple13 = {
+let apple13C = {
     armazenamento: '1000 GB',
     processador: '2x 3.22 GHz Avalanche + 4x 1.82 GHz Blizzard',
     ram: '6 GB',
@@ -42,7 +42,7 @@ let apple13 = {
 }
 
 
-let motorolaRazr = {
+let motorolaRazrD = {
     armazenamento: '256 GB',
     processador: '1x 3.19 GHz Cortex-X2 + 3x 2.75 GHz Cortex-A710 + 4x 1.80 GHz Cortex-A510',
     ram: '8 GB',
@@ -58,7 +58,7 @@ let motorolaRazr = {
 
 
 
-let pocoF3 = {
+let pocoF3E = {
     armazenamento: '128 GB  ',
     processador: '1x 3.2 GHz Cortex A77 + 3x 2.42 GHz Cortex A77 + 4x 1.8 GHz Cortex A53',
     ram: '6 GB',
@@ -143,3 +143,8 @@ let xaomi14 = {
     cargaBateria: '4610 mAh', 
     anoDeLancamento : '2024'
 }
+
+console.log(`${pocoA.marca} ${pocoA.modelo} --> R$ ${pocoA.preco}`);
+console.log(`${pixelB.marca} ${pixelB.modelo} --> R$ ${pixelB.preco}`);
+console.log(`${apple13C.marca} ${apple13C.modelo} --> R$ ${apple13C.preco}`);
+console.log(`${motorolaRazrD.marca} ${motorolaRazrD.modelo} --> R$ ${motorolaRazrD.preco}`);

@@ -1,4 +1,4 @@
-let pocoA = {
+let celularA = {
     armazenamento: '128 GB',
     processador: '2x 2.3 GHz Kryo 470 Gold + 6x 1.8 GHz Kryo 470 Silver',
     ram: '6 GB',
@@ -12,7 +12,7 @@ let pocoA = {
     anoDeLancamento : ''
 }
 
-let pixelB = {
+let celularB = {
     armazenamento: '1024 GB',
     processador: '1x 3.0 GHz Cortex-X3 + 4x 2.45 GHz Cortex-A715 + 4x 2.15 GHz Cortex-A510',
     ram: '12 GB',
@@ -27,7 +27,7 @@ let pixelB = {
 }
 
 
-let apple13C = {
+let celularC = {
     armazenamento: '1000 GB',
     processador: '2x 3.22 GHz Avalanche + 4x 1.82 GHz Blizzard',
     ram: '6 GB',
@@ -42,7 +42,7 @@ let apple13C = {
 }
 
 
-let motorolaRazrD = {
+let celularD = {
     armazenamento: '256 GB',
     processador: '1x 3.19 GHz Cortex-X2 + 3x 2.75 GHz Cortex-A710 + 4x 1.80 GHz Cortex-A510',
     ram: '8 GB',
@@ -58,7 +58,7 @@ let motorolaRazrD = {
 
 
 
-let pocoF3E = {
+let celularE = {
     armazenamento: '128 GB  ',
     processador: '1x 3.2 GHz Cortex A77 + 3x 2.42 GHz Cortex A77 + 4x 1.8 GHz Cortex A53',
     ram: '6 GB',
@@ -73,7 +73,7 @@ let pocoF3E = {
 }
 
 
-let rog7 = {
+let celularF = {
     armazenamento: '1512 GB',
     processador: '1x 3.2 GHz Cortex-X3 + 2x 2.8 GHz Cortex-A715 + 2x 2.8 GHz Cortex-A710 + 3x 2.0 GHz Cortex-A510',
     ram: '16 GB',
@@ -88,7 +88,7 @@ let rog7 = {
 }
 
 
-let galaxyZ = {
+let celularG = {
     armazenamento: '512 GB ',
     processador: '1x 3.36 GHz Cortex-X3 + 2x 2.8 GHz Cortex-A715 + 2x 2.8 GHz Cortex-A710 + 3x 2.0 GHz Cortex-A510',
     ram: '8 GB',
@@ -102,7 +102,7 @@ let galaxyZ = {
     anoDeLancamento : '2023'
 }
 
-let edge40 = {
+let celularH = {
     armazenamento: '512 GB ',
     processador: '1x 3.2 GHz Cortex-X3 + 2x 2.8 GHz Cortex-A715 + 2x 2.8 GHz Cortex-A710 + 3x 2.0 GHz Cortex-A510',
     ram: '12 GB',
@@ -116,7 +116,7 @@ let edge40 = {
     anoDeLancamento : '2023'
 }
 
-let a51 = {
+let celularI = {
     armazenamento: '128 GB',
     processador: '2x 2.2 GHz Kyro 470 Gold + 6x 1.8 GHz Kyro 470 Silver',
     ram: '6 GB',
@@ -130,7 +130,7 @@ let a51 = {
     anoDeLancamento : '2020'
 }
 
-let xaomi14 = {
+let celularJ = {
     armazenamento: '256 GB',
     processador: '1x 3.3 GHz Cortex-X4 + 3x 3.2 GHz Cortex-A720 + 2x 3.0 GHz Cortex-A720 + 2x 2.3 GHz Cortex-A520',
     ram: '8 GB',
@@ -144,7 +144,22 @@ let xaomi14 = {
     anoDeLancamento : '2024'
 }
 
-console.log(`${pocoA.marca} ${pocoA.modelo} --> R$ ${pocoA.preco}`);
-console.log(`${pixelB.marca} ${pixelB.modelo} --> R$ ${pixelB.preco}`);
-console.log(`${apple13C.marca} ${apple13C.modelo} --> R$ ${apple13C.preco}`);
-console.log(`${motorolaRazrD.marca} ${motorolaRazrD.modelo} --> R$ ${motorolaRazrD.preco}`);
+//---------------------------------------------------
+
+console.log(`${celularA.marca} ${celularA.modelo} --> R$ ${celularA.preco}`);
+console.log(`${celularB.marca} ${celularB.modelo} --> R$ ${celularB.preco}`);
+console.log(`${celularC.marca} ${celularC.modelo} --> R$ ${celularC.preco}`);
+console.log(`${celularD.marca} ${celularD.modelo} --> R$ ${celularD.preco}`);
+
+//-----------------------------------------------------
+
+let listaDeCelulares = [];
+
+listaDeCelulares.push(celularA);
+listaDeCelulares.push(celularB);
+listaDeCelulares.push(celularC);
+listaDeCelulares.push(celularD);
+
+for(let i = 0; i < listaDeCelulares.length; i++){
+    console.log(`${listaDeCelulares[i].marca} ${listaDeCelulares[i].modelo} --> R$ ${listaDeCelulares.preco}`);
+}

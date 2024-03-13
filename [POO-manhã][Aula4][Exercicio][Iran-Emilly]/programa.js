@@ -1,4 +1,5 @@
 let celularA = {
+    foto:'poco.jpg',
     armazenamento: '128 GB',
     processador: '2x 2.3 GHz Kryo 470 Gold + 6x 1.8 GHz Kryo 470 Silver',
     ram: '6 GB',
@@ -13,6 +14,7 @@ let celularA = {
 }
 
 let celularB = {
+    foto:'pixel.jpeg',
     armazenamento: '1024 GB',
     processador: '1x 3.0 GHz Cortex-X3 + 4x 2.45 GHz Cortex-A715 + 4x 2.15 GHz Cortex-A510',
     ram: '12 GB',
@@ -28,6 +30,7 @@ let celularB = {
 
 
 let celularC = {
+    foto:'iphone.jpeg',
     armazenamento: '1000 GB',
     processador: '2x 3.22 GHz Avalanche + 4x 1.82 GHz Blizzard',
     ram: '6 GB',
@@ -43,6 +46,7 @@ let celularC = {
 
 
 let celularD = {
+    foto:'motorola.jpeg',
     armazenamento: '256 GB',
     processador: '1x 3.19 GHz Cortex-X2 + 3x 2.75 GHz Cortex-A710 + 4x 1.80 GHz Cortex-A510',
     ram: '8 GB',
@@ -59,6 +63,7 @@ let celularD = {
 
 
 let celularE = {
+    foto:'pocof3.jpeg',
     armazenamento: '128 GB  ',
     processador: '1x 3.2 GHz Cortex A77 + 3x 2.42 GHz Cortex A77 + 4x 1.8 GHz Cortex A53',
     ram: '6 GB',
@@ -74,6 +79,7 @@ let celularE = {
 
 
 let celularF = {
+    foto:'rog.jpeg',
     armazenamento: '1512 GB',
     processador: '1x 3.2 GHz Cortex-X3 + 2x 2.8 GHz Cortex-A715 + 2x 2.8 GHz Cortex-A710 + 3x 2.0 GHz Cortex-A510',
     ram: '16 GB',
@@ -89,6 +95,7 @@ let celularF = {
 
 
 let celularG = {
+    foto:'flip.jpg',
     armazenamento: '512 GB ',
     processador: '1x 3.36 GHz Cortex-X3 + 2x 2.8 GHz Cortex-A715 + 2x 2.8 GHz Cortex-A710 + 3x 2.0 GHz Cortex-A510',
     ram: '8 GB',
@@ -103,6 +110,7 @@ let celularG = {
 }
 
 let celularH = {
+    foto:'edge40.jpeg',
     armazenamento: '512 GB ',
     processador: '1x 3.2 GHz Cortex-X3 + 2x 2.8 GHz Cortex-A715 + 2x 2.8 GHz Cortex-A710 + 3x 2.0 GHz Cortex-A510',
     ram: '12 GB',
@@ -117,6 +125,7 @@ let celularH = {
 }
 
 let celularI = {
+    foto:'a71.avif',
     armazenamento: '128 GB',
     processador: '2x 2.2 GHz Kyro 470 Gold + 6x 1.8 GHz Kyro 470 Silver',
     ram: '6 GB',
@@ -131,6 +140,7 @@ let celularI = {
 }
 
 let celularJ = {
+    foto:'xiaomi14.jpeg',
     armazenamento: '256 GB',
     processador: '1x 3.3 GHz Cortex-X4 + 3x 3.2 GHz Cortex-A720 + 2x 3.0 GHz Cortex-A720 + 2x 2.3 GHz Cortex-A520',
     ram: '8 GB',
@@ -162,4 +172,17 @@ listaDeCelulares.push(celularD);
 
 for(let i = 0; i < listaDeCelulares.length; i++){
     console.log(`${listaDeCelulares[i].marca} ${listaDeCelulares[i].modelo} --> R$ ${listaDeCelulares.preco}`);
+}
+
+for (let i = 0; i < listaDeCelulares.length; i++ ){
+    document.write(`
+  <div>
+    <img src="img/${listaDeCelulares[i].foto}">
+        <h2>${listaDeCelulares[i].marca} ${listaDeCelulares[i].modelo}</h2>
+        <p>${listaDeCelulares[i].armazenamento}</p>
+        <p>${listaDeCelulares[i].ram}</p>
+        <p>${listaDeCelulares[i].cor}</p>
+        <h3>${listaDeCelulares[i].preco}</h3>
+  </div>
+    `);
 }

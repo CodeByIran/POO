@@ -176,13 +176,13 @@ for(let i = 0; i < listaDeCelulares.length; i++){
 
 for (let i = 0; i < listaDeCelulares.length; i++ ){
     document.write(`
-  <div>
-    <img src="img/${listaDeCelulares[i].foto}">
-        <h2>${listaDeCelulares[i].marca} ${listaDeCelulares[i].modelo}</h2>
-        <p>${listaDeCelulares[i].armazenamento}</p>
-        <p>${listaDeCelulares[i].ram}</p>
-        <p>${listaDeCelulares[i].cor}</p>
-        <h3>${listaDeCelulares[i].preco}</h3>
+  <div class="card"> 
+    <img class="foto" src="img/${listaDeCelulares[i].foto}">
+        <p class="nome">${listaDeCelulares[i].marca} ${listaDeCelulares[i].modelo}</p>
+        <p class="armazenamento">${listaDeCelulares[i].armazenamento}</p>
+        <p class="ram">${listaDeCelulares[i].ram}</p>
+        <p class="cor">${listaDeCelulares[i].cor}</p>
+        <p class="preco">${listaDeCelulares[i].preco}</p>
   </div>
     `);
 }

@@ -1,0 +1,40 @@
+body{
+    background-color: #024499;
+}
+
+.card{
+    background-color: #5aa0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 400px; /*largura  do cartão*/
+    padding: 25px;
+  /*  border: solid 1px #ff0000;   /*solid = linha contínua*/
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+.foto{
+    width: 250px; /*altura da foto*/
+  
+    border: solid 1px rgb(0, 21, 61);
+}
+.nome{
+    color: azure;
+    font-size: 20px;/* tamanho da letra*/
+    font-weight: 800; /*espesurra da linha da letra*/
+}
+
+.armazenamento{
+
+}
+
+.ram{
+
+}
+
+.cor{
+
+}
+.preco{
+   /* border: solid rgb(238, 255, 0);*/
+    font-size: 18px;
+    font-weight: 700;
+}

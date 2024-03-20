@@ -72,7 +72,7 @@ let celularE = {
     preco: 'R$2,300',
     modelo: 'Poco F3',
     marca: 'xaomi', 
-    cor: 'Vinho', 
+    cor: 'Preto', 
     cargaBateria: '4520 mAh', 
     anoDeLancamento : '2021'
 }
@@ -160,7 +160,8 @@ console.log(`${celularA.marca} ${celularA.modelo} --> R$ ${celularA.preco}`);
 console.log(`${celularB.marca} ${celularB.modelo} --> R$ ${celularB.preco}`);
 console.log(`${celularC.marca} ${celularC.modelo} --> R$ ${celularC.preco}`);
 console.log(`${celularD.marca} ${celularD.modelo} --> R$ ${celularD.preco}`);
-
+console.log(`${celularE.marca} ${celularE.modelo} --> R$ ${celularE.preco}`);
+console.log(`${celularF.marca} ${celularF.modelo} --> R$ ${celularF.preco}`);
 //-----------------------------------------------------
 
 let listaDeCelulares = [];
@@ -169,6 +170,8 @@ listaDeCelulares.push(celularA);
 listaDeCelulares.push(celularB);
 listaDeCelulares.push(celularC);
 listaDeCelulares.push(celularD);
+listaDeCelulares.push(celularE);
+listaDeCelulares.push(celularF);
 
 for(let i = 0; i < listaDeCelulares.length; i++){
     console.log(`${listaDeCelulares[i].marca} ${listaDeCelulares[i].modelo} --> R$ ${listaDeCelulares.preco}`);

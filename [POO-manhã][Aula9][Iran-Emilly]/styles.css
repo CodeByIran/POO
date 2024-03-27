@@ -6,22 +6,25 @@ body{
     flex-wrap: wrap; /*Permite quebrar linha!*/
     width: 50%;
     gap: 20px;
-    border: solid 1px #ffff;
+    /* border: solid 1px #ffff; */
     
 } 
 .card {
     background-color: rgb(35, 37, 39);
     display: flex;
     align-items: center;
-    /* width: 50%; */
+
+    width: 700px;
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
+    margin-bottom: 10px;
   
 }
 
 .foto {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    /* width: 90px; */
+    /* height: px; */
     object-fit: cover;
     margin-right: 20px;
     border-radius: 5px;

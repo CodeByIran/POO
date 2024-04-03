@@ -14,7 +14,9 @@ body{
     display: flex;
     align-items: center;
 
-    width: 700px;
+    /* width: 100%; */
+    width: 1000px;
+    /* width: 2000px; */
     padding: 10px;
     /* border-bottom: 1px solid #ccc; */
     margin-bottom: 10px;
@@ -22,8 +24,8 @@ body{
 }
 
 .foto {
-    width: 50px;
-    /* width: 90px; */
+    /* width: 50px; */
+    width: 90px;
     /* height: px; */
     object-fit: cover;
     margin-right: 20px;
@@ -52,9 +54,7 @@ body{
 .album{   
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     flex-direction: flex-end;
+    width: 10%;
     font-size: 0.8em;
     color: #666;
 }
-
-
-/*gap - espaçamento entre as letras...../*

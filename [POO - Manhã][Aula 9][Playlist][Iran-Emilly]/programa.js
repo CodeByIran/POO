@@ -1,9 +1,10 @@
 let music1 = {
     foto:'poco.jpg',
-    titulo: 'surreal',
+    titulo: 'Surreal',
     artistas: 'Luiza Sonza',
     album: 'Escândalo Íntimo',
     poster: 'surreal.jpeg',
+    video: `VkA_kJsqZOo?si=IPVFneQBmplTA1SH`
 }
 
 let music2 = {
@@ -11,6 +12,7 @@ let music2 = {
      artistas: ' Mac Júlia',
      album: 'single',
      poster: 'sofa breja e netflix.jpeg',
+     video: `ncLaAaENRWY`
  }
 
  let music3 = {
@@ -18,6 +20,7 @@ let music2 = {
      artistas: 'Baco Exu do Blues',
      album: 'single',
      poster: 'samba in paris.jpeg',
+     video: `4iKtTmnHojU?si=1Cx03Z5gFOq5v-7N`
  }
 
  let music4 = {
@@ -25,6 +28,7 @@ let music2 = {
      artistas: '1kilo',
      album: 'single',
      poster: 'deixe me ir.jpeg',
+     video: `wFXrdtnD4eY`
  }
 
  let music5 = {
@@ -32,6 +36,7 @@ let music2 = {
      artistas: 'Marília Mendonça',
      album: 'single',
      poster: 'vailaemcasahoje.jpeg',
+     video: `UJyr6p3nZRA`
  }
 
  let music6 = {
@@ -39,6 +44,7 @@ let music2 = {
      artistas: 'Dua Lipa',
      album: 'single',
      poster: 'no lie.jpeg',
+     video: `166tsC3RUcc`
  }
 
  let music7 = {
@@ -46,6 +52,7 @@ let music2 = {
      artistas: 'Mc Cabelinho',
      album: 'single',
      poster: 'intenção.jpeg',
+     video: `atTFe3jIJFo`
  }
 
  let music8 = {
@@ -53,6 +60,7 @@ let music2 = {
      artistas: 'Matheus e Kauan',
      album: 'single',
      poster: 'teassumiprobrasil.jpeg',
+     video: `5si1VQICDKI`
  }
  
  let music9 = {
@@ -60,6 +68,7 @@ let music2 = {
      artistas: 'Felipe ret',
      album: 'single',
      poster: 'reus.jpeg',
+     video: `VCZ80bl9hAg`
  }
 
  let music10 = {
@@ -67,6 +76,7 @@ let music2 = {
      artistas: 'Pablo Vitar',
      album: 'Vai passar mal',
      poster: 'corposensual.jpeg',
+     video: `0I4f9pakFQ4`
  }
 
  
@@ -108,6 +118,16 @@ for (let i = 0; i < listaDeMusic.length; i++) {
             <span class="artistas">${listaDeMusic[i].artistas}</span>
             </div>
             <span class="album">${listaDeMusic[i].album}</span>
+
+                <iframe class='video'
+
+        src="https://www.youtube.com/embed/${listaDeMusic[i].video}"
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+
+        </iframe>
         </div>
     `);
 }

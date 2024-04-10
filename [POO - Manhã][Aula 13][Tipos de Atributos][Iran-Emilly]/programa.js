@@ -23,4 +23,4 @@ let clienteC = {
             frete: 72
         }]     
  }
- console.log(clienteC.pedidos[1].frete); //imprimir os d
+ console.log(clienteC.pedidos[1].frete); //imprimir o valor do frete do pedido

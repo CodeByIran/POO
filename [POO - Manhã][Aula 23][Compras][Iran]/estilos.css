@@ -1,0 +1,14 @@
+
+/* body{
+background-color: #111111;
+} */
+.card{
+    display: flex;
+    justify-content: space-around;
+    color: #999999;
+    background-color: #111111;
+}
+
+.card:nth-child(2n){
+    background-color: #1d1d1d;
+}

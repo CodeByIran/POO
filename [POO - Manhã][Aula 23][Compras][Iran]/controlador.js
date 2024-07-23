@@ -25,6 +25,7 @@ function quandoClicarNoBotao(){
      //Adicionando o produtoTemporario ao carrinhoDeCompras
     carrinhoDeCompras.adicionarProduto(produtoTemporario);
     console.log(carrinhoDeCompras);
+    desenharCarrinhoDeCompras(carrinhoDeCompras, containerCards);
 }
 
 //Adicionando um "fofoqueiro" ao botão Adicionar.

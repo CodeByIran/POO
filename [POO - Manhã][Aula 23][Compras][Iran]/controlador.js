@@ -5,6 +5,7 @@ let inputDescricao = document.getElementById('iptDescricao');
 let precoUnitario = document.getElementById('ipPtrecoUnitario');
 let buttonAdicionar = document.getElementById('btnAdicionar');
 let containerCards = document.getElementById('containerCards');
+let containerTotal = document.getElementById('containerTotal');
 
 //Criando o objeto carrinhoDeCompras
 let carrinhoDeCompras = new CarrinhoDeCompras();
@@ -26,12 +27,14 @@ function quandoClicarNoBotao(){
     carrinhoDeCompras.adicionarProduto(produtoTemporario);
     console.log(carrinhoDeCompras);
     desenharCarrinhoDeCompras(carrinhoDeCompras, containerCards);
-}
+    
+    console.log(carrinhoDeCompras.calcularTotal());
+    }
 
 //Adicionando um "fofoqueiro" ao botão Adicionar.
 //Sempre que o botão for clicado o 
 //fofoqueiro irá chamar a função quandoClicarNoBotao
-buttonAdicionar.addEventListener('click', quandoClicarNoBotao);
+buttonAdicionar.addEventListener('click', quandoClicarNoBotao, );
 
 
 //Criação dos objetos

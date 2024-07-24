@@ -3,7 +3,7 @@ class Produto {
         this.id = id;
         this.foto = foto;
         this.descricao = descricao;
-        this.precoUnitario = precoUnitario;
+        this.precoUnitario = Number(precoUnitario);
     }
 }
 
@@ -16,6 +16,7 @@ class CarrinhoDeCompras {
         this.data = new Date();
         this.listaDeProdutos = [];
     }
+
     adicionarProduto(produto) {
         if (produto instanceof Produto) {
             this.listaDeProdutos.push(produto);
@@ -23,6 +24,14 @@ class CarrinhoDeCompras {
             console.error('Só é possível adicionar objetos da classe Produto');
         }
     }
+    calcularTotal(){
+        let total = 0;
+        for (let i = 0; i < this.listaDeProdutos.length; i++) {
+            total += this.listaDeProdutos[i].precoUnitario;    
+        }
+                return total;
+    }
+
 }
 
 

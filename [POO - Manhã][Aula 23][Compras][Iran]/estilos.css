@@ -1,12 +1,15 @@
+body{
+    background-color: #111111;
+    /* color:#999999; */
+    color: white;
+    font-size: 32px;
+}
 
-/* body{
-background-color: #111111;
-} */
 .card{
     display: flex;
     justify-content: space-around;
-    color: #999999;
-    background-color: #111111;
+    color: #ffffff;
+    background-color: #999999;
 }
 
 .card:nth-child(2n){

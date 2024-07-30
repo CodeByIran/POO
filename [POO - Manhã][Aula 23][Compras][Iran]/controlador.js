@@ -5,7 +5,8 @@ let inputDescricao = document.getElementById('iptDescricao');
 let precoUnitario = document.getElementById('ipPtrecoUnitario');
 let buttonAdicionar = document.getElementById('btnAdicionar');
 let containerCards = document.getElementById('containerCards');
-let containerTotal = document.getElementById('containerTotal');
+let cTotal = document.getElementById('containerTotal');
+let inputMarca = document.getElementById('iptMarca');
 
 //Criando o objeto carrinhoDeCompras
 let carrinhoDeCompras = new CarrinhoDeCompras();
@@ -20,13 +21,14 @@ function quandoClicarNoBotao(){
         inputId.value,
          '',
         inputDescricao.value,
+        inputMarca.value,
         precoUnitario.value
      );
     
      //Adicionando o produtoTemporario ao carrinhoDeCompras
     carrinhoDeCompras.adicionarProduto(produtoTemporario);
     console.log(carrinhoDeCompras);
-    desenharCarrinhoDeCompras(carrinhoDeCompras, containerCards);
+    desenharCarrinhoDeCompras(carrinhoDeCompras, containerCards, cTotal);
     
     console.log(carrinhoDeCompras.calcularTotal());
     }
@@ -34,18 +36,18 @@ function quandoClicarNoBotao(){
 //Adicionando um "fofoqueiro" ao botão Adicionar.
 //Sempre que o botão for clicado o 
 //fofoqueiro irá chamar a função quandoClicarNoBotao
-buttonAdicionar.addEventListener('click', quandoClicarNoBotao, );
+buttonAdicionar.addEventListener('click', quandoClicarNoBotao);
 
 
 //Criação dos objetos
-const produto1 = new Produto(1, 'foto1.jpg', 'Descrição do produto 1', 10.50);
-const produto2 = new Produto(2, 'foto2.jpg', 'Descrição do produto 2', 20.00);
+// const produto1 = new Produto(1, 'foto1.jpg', 'Descrição do produto 1', 10.50);
+// const produto2 = new Produto(2, 'foto2.jpg', 'Descrição do produto 2', 20.00);
 
 // Criando um objeto da classe CarrinhoDeCompras
-const carrinho = new CarrinhoDeCompras();
+// const carrinho = new CarrinhoDeCompras();
 
-// Adicionando os dois produtos ao carrinho usando o método adicionarProduto
-carrinho.adicionarProduto(produto1);
-carrinho.adicionarProduto(produto2);
+// // Adicionando os dois produtos ao carrinho usando o método adicionarProduto
+// carrinho.adicionarProduto(produto1);
+// carrinho.adicionarProduto(produto2);
 
-console.log(carrinho);
+// console.log(carrinho);

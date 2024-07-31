@@ -2,7 +2,10 @@ body{
     background-color: #111111;
     /* color:#999999; */
     color: white;
+    
+    font-family: "Courier Prime", monospace;
     font-size: 32px;
+   
 }
 
 .card{
@@ -14,4 +17,21 @@ body{
 
 .card:nth-child(2n){
     background-color: #1d1d1d;
+}
+
+input[type='text'], input[type='number']{
+    border: solid 2px #03d4f9;
+
+    font-family: "Asap", sans-serif;
+    font-size: 20px;
+}
+button{
+    background-color: #f9c403;
+    color: #111111;
+
+    font-family: "Asap", sans-serif;
+    font-size: 20px;
+    font-weight: 2 00;
+
+    padding: 8px, 16px;
 }

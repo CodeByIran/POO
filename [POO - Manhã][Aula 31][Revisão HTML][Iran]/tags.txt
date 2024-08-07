@@ -1,0 +1,25 @@
+tags mais utilizadas abaixo:
+
+<div> </div>
+
+<span>  </span>
+
+<img src='teste.png'>
+------------------------------
+<a href='teste.html'> 
+
+</a>
+------------------------------
+<form> 
+    <input type='text'> == Cria um campo de entrada de texto de linha única onde o usuário pode digitar uma senha.
+
+    <input type='password'> == Cria um campo de entrada de texto de linha única onde o usuário pode digitar uma senha.
+
+    <input type='submit'>  == Cria um botão que, quando clicado, envia o formulário.
+
+    <input type='checkbox'> == Cria uma caixa de seleção que o usuário pode marcar ou desmarcar.    
+
+    <input type='radio'>  == Cria um botão de opção que o usuário pode selecionar.
+    Os botões de rádio são geralmente usados em grupos onde apenas uma opção pode ser selecionada.
+    
+    </form>

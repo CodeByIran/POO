@@ -4,8 +4,13 @@
 
 #menu{
     display: flex;
-    flex-direction: column; /*elementos filhos ficam na vertical*/
-    gap: 12px;
+    flex-direction: row;
+    gap: 12px; /*espaço entre os elementos filhos*/
 
-    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-between; */
+
+    flex-wrap: wrap; /*permite a quebra de linha*/
+
+    border: solid 2px black;
 }

@@ -72,9 +72,9 @@ body {
     width: 100px;
     align-items: stretch;
     border-radius: 100%;
-    
 
 }
 .name{
     color: aliceblue;
+    font-size: 10px;
 }

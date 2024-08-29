@@ -1,8 +1,7 @@
 body {
-    /* margin: 0;
-    padding: 0; */
-    background-color: #2b2b2b;
-    /* background-color: blueviolet; */
+
+    background-color: #000000;
+ 
 }
 .card{
     border: solid 1px white;
@@ -11,15 +10,14 @@ body {
     justify-content: space-between;
     gap: 12px;
     padding: 12px;
-    /* flex-direction: row;
-    justify-content: center; */
+    
 }
 .text{
     display: flex;
     justify-content: end;
     flex-direction: row;
     gap: 10px;
-}
+}   
 
 .seta{
     display: flex;
@@ -29,18 +27,16 @@ body {
 }
 
 .container {
-    padding: 15px; /* Adiciona um preenchimento interno de 7px ao redor do conteúdo da div. */
-    display: flex; /* Define o modelo de layout como flexível, permitindo a disposição dos itens filhos. */
-    flex-direction: column; /* Organiza os itens filhos em uma coluna (verticalmente). */
-    background-color: rgba(19, 12, 12, 0.877); /* Define a cor de fundo com opacidade (quase preto com leve transparência). */
-    gap: 20px; /* Define o espaçamento entre os itens filhos. */
-    width: 250px; /* Define a largura do container como 400 pixels. */
-    height: 75px; /* Define a altura do container como 75 pixels. */
-    border-radius: 10px; /* Arredonda os cantos do container com um raio de 10 pixels. */
+    padding: 15px;
+    display: flex; 
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.877); 
+    gap: 20px; 
+    width: 250px; 
+    height: 75px;
+    border-radius: 10px; 
     border: solid 1px orange;
-    /* align-items: center; */
-    /* justify-content: center; */ /* Comentado: Centraliza os itens filhos horizontalmente. */
-    /* align-items: center; */ /* Comentado: Centraliza os itens filhos verticalmente. */
+
 }
 .menu {
     padding-left: 5px;
@@ -48,11 +44,7 @@ body {
     font-size: 20px;
     color: aliceblue;
     align-items: center;
-    /* background-color: rgba(255, 255, 255, 0.1); */
-    /* border-radius: 10px; */
-    /* display: flex; */
-    /* flex-direction: row;
-    align-items: center; */
+    
 }
 
 .icon {
@@ -72,11 +64,17 @@ body {
     flex-direction: row;
     justify-content: left;
     border: solid 1px white;
-    padding: 15px;
+    /* padding: 15px; */
     gap: 10px;
 
 }
 .img{
     width: 100px;
+    align-items: stretch;
     border-radius: 100%;
+
+}
+.name{
+    color: aliceblue;
+    font-size: 10px;
 }

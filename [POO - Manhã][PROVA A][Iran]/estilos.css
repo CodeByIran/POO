@@ -1,0 +1,66 @@
+.pagina{
+    padding: 20px;
+    
+    /*  */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /*  */
+    
+    border: solid 1px rgb(30, 248, 22);
+}
+.topo{
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: solid 1px rgb(238, 15, 15);
+}
+
+.grupo-cards{
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+    border: solid 1px rgb(238, 15, 15);
+}
+
+.card{
+    padding: 20px;
+    width: 220px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border-radius: 12px;
+    border: solid 3px rgb(15, 71, 238);
+}
+
+/* ------------------------------------------------- */
+.icon{
+    border: solid 1px rgb(238, 15, 15);
+
+    width: 24px;
+    height: 24px;
+}
+
+.title{
+    border: solid 1px rgb(238, 15, 15);
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text{
+    border: solid 1px rgb(238, 15, 15);
+}
+
+.link{
+    border: solid 1px rgb(238, 15, 15);
+    color: blueviolet;
+}

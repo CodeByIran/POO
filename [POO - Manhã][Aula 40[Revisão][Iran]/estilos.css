@@ -1,0 +1,33 @@
+body{
+  background-color: #05101a;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: #03080c; 
+    /* border: solid 1px white; */
+    padding: 15px;
+    gap: 10px;
+}
+.cards{
+    border: solid 1px white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: #03080c;
+    border-radius: 20px;
+}
+.img{
+    width: 300px;
+    align-items: stretch;
+    
+}
+.name{
+    color: #4c7497;
+    font-size: 30px;
+}
+h2{
+    color: #ffdd4a;
+}

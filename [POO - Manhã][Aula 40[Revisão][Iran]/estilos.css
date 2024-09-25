@@ -20,13 +20,13 @@ body{
     border-radius: 20px;
 }
 .img{
-    width: 300px;
+    width: 200px;
     align-items: stretch;
     
 }
 .name{
     color: #4c7497;
-    font-size: 30px;
+    font-size: 20px;
 }
 h2{
     color: #ffdd4a;

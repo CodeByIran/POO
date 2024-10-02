@@ -6,7 +6,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: left;
-    background-color: #03080c; 
+    /* background-color: #03080c;  */
     /* border: solid 1px white; */
     padding: 15px;
     gap: 10px;

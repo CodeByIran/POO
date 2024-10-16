@@ -1,4 +1,32 @@
 #topo{
     padding: 20px;
+
+    
     border: solid 2px black;
+}
+
+#containerCards{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    padding: 12px;
+
+    border: solid 2px red;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+
+
+    border: solid 1px blue;
+}
+
+.foto{
+    width: 160px;
+    height: 160px;
+
+    object-fit: cover;
 }

@@ -1,29 +1,29 @@
 let lancheA = {
     nome: "X-Burger",
-    tipo: "Hamburguer",
+    tipo: "Salgado",
     foto: "xburguer.jpeg",
-    preco: 18.90
+    preco: 5.5
   };
 
   let lancheB  = {
     nome: "X-Calabresa",
-    tipo: "Hamburguer",
+    tipo: "Salgado",
     foto: "xcalabresa.jpeg",
-    preco: 13.00
+    preco: 10
   };
 
   let lancheC = {
     nome: "X-Alcatra",
-    tipo: "Hamburguer",
+    tipo: "Salgado",
     foto: "xalcatra.jpeg",
-    preco: 14.90
+    preco: 15
   };
 
   let lancheD = {
-    nome: "X-Picanha",
-    tipo: "Hamburguer",
-    foto: "xpicanha.jpeg",
-    preco: 29.90
+    nome: "Trufa",
+    tipo: "doce",
+    foto: "trufa.jpeg",
+    preco: 2
   };
 
   let cardapio = [];
@@ -31,3 +31,4 @@ let lancheA = {
   cardapio.push(lancheB);
   cardapio.push(lancheC);
   cardapio.push(lancheD);
+ 

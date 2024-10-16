@@ -7,9 +7,13 @@ function desenharCards(tagContainer, lista){
                 <img src='img/${lista[i].foto}' class='foto'>
                 <span class='texto'>${lista[i].nome}</span>
                 <span class='texto'>${lista[i].tipo}</span>
-                <span class='texto'>${lista[i].preco}</span>
+                <span class='texto'>R$ ${lista[i].preco}</span>
             </card>
         `;
         
     }
+}
+
+function desenharMensagem(tagContainer){
+    tagContainer.innerHTML = 'Nenhum resultado foi encontrado para esses filtros.'
 }

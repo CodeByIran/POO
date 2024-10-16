@@ -12,10 +12,21 @@
 
 
         <div id="topo">
-            <form action="#">
+            <!-- event.preventDefault() não deixa a página ser 
+            recarregada ou redirecionada, quando se envia o formulário 
+            -->
+            <form action="#" onsubmit="event.preventDefault()">
+
+                <label for="iptTipo">Tipo:</label>
+                <input type="text" name="" id="iptTipo"><br>
+
                 <label for="iptPreco">Preço: R$</label>
-                <input type="text" name="" id="iptPreco">
-                <button>Filtrar</button>
+                <input type="text" name="" id="iptPreco"><br>
+
+
+
+                <button id="btnFiltrar">Filtrar</button>
+
             </form>
         </div>
 

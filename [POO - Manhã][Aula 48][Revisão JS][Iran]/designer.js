@@ -15,5 +15,5 @@ function desenharCards(tagContainer, lista){
 }
 
 function desenharMensagem(tagContainer){
-    tagContainer.innerHTML = 'Nenhum resultado foi encontrado para esses filtros.'
+    tagContainer.innerHTML = `Nenhum resultado foi encontrado para esses filtros.`
 }

@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap; /* quebra de linha */
+    background-color: #f0f4f8; /* Cor clara e suave */
+    font-family: 'Arial', sans-serif;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    font-size: 48px;
+    color: #3e5b76; /* Cor azul escuro */
+    justify-content: center;
+}
+
+#topo {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-color: #56cfe1; /* Azul claro */
+    color: #ffffff;
+    padding: 15px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #80ffdb; /* Verde água */
+    width: 220px;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    color: #333333; /* Cor do texto mais escura */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.foto {
+    height: auto;
+    max-height: 150px;
+    padding-bottom: 10px;
+    border-radius: 10%;
+}
+
+#containerCards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 12px;
+    justify-content: center;
+}
+
+.texto {
+    padding: 10px;
+    color: #2c3e50; /* Um tom de cinza escuro */
+}
+
+.caixa {
+    width: 150px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ff6b6b; /* Borda vermelha */
+}
+
+#btnFiltrar {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff6b6b; /* Botão vermelho */
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#btnFiltrar:hover {
+    background-color: #e63946; /* Vermelho mais escuro no hover */
+}
+
+.erro {
+    display: flex;
+    flex-direction: row;
+    font-size: 50px;
+    color: #f77f00; /* Laranja vibrante */
+}

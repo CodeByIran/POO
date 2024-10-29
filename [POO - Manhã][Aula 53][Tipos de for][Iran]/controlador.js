@@ -12,12 +12,32 @@ let divContainerCards = document.getElementById('containerCards');
 
 desenharCards(divContainerCards, times);
 
+// ------------------------------------------------
+// codigo para carregar a imagem do input file.
+
+let srcImagem;
+
+function quandoCarregarArquivo() {
+    const fileReader = new FileReader();
+    const arquivos = iptEscudo.files;
+
+    if(arquivos){ // verificando se arquivos não está vazio
+        fileReader.onload = function (event) {
+            srcImagem = event.target.result;
+        }
+        fileReader.readAsDataURL(arquivos[0]);
+    }
+}
+
+iptEscudo.addEventListener('change', quandoCarregarArquivo);
+// ------------------------------------------------
+
 function cadastrar(){
     let timeTemp = {
         name: iptNome.value,
         estadoDeOrigem: iptEstado.value,
         anoDaFundacao: iptAno.value,
-        fotoEscudo: iptEscudo.value
+        fotoEscudo: srcImagem
     }
 
     times.push(timeTemp);

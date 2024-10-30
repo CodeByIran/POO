@@ -16,17 +16,26 @@
     
         <div>
             <label for="iptEstado">Estado:</label>
-            <input type="text" id="iptEstado">
+
+            <select id="iptEstado">
+                <option value=""></option>
+                <option value="AL">Alagoas</option>
+                <option value="PE">Pernambuco</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="AM">Amazonas</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select>
         </div>
     
         <div>
             <label for="iptAno">Ano de Fundação:</label>
-            <input type="number" id="iptAno">
+            <input type="month" id="iptAno" min="1980-01" max="1920-12">
         </div>
     
         <div>
             <label for="iptEscudo">Escudo:</label>
-            <input type="file" id="iptEscudo">
+            <input type="file" id="iptEscudo" accept="image/*">
         </div>
         
         <button id="btnCadastrar">Cadastrar</button>

@@ -1,153 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container{
-            background-color: #D9D9D9;
-            width: 375px;
-            height: 812px;
-            border-radius: 30px;
-            overflow: hidden;
-        }
-
-        .cabeca{
-            height: 15%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #516B8A;
-            padding: 20px 25px;
-        }
-
-        .cabeca img{
-            width: 25px;
-            height: 25px;
-        }
-
-        .cabeca .user{
-            color: #fff;
-            font-weight: bold;
-        }
-
-        .cabeca .menu{
-            display: flex;
-            flex-direction: column;
-        }
-
-        .cabeca .menu .line{
-            width: 25px;
-            height: 3px;
-            background-color: #fff;
-            margin-bottom: 5px;
-        }
-
-        .barra-pesquisa{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 25px;
-        }
-
-        .barra-pesquisa input{
-            background-color: #fff;
-            border: none;
-            padding: 10px;
-            border-radius: 10px;
-            width: 80%;
-        }
-
-        .barra-pesquisa img{
-            width: 20px;
-            height: 20px;
-        }
-
-        .categorias{
-            display: flex;
-            justify-content: space-around;
-            padding:  20px 0;
-            border-top: 1px solid #444;
-            border-bottom: 1px solid #444;
-        }
-
-        .categorias div{
-            color: #fff;
-            text-align: center;
-        }
-
-        .content{
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            overflow-y: auto;
-        }
-
-        .content .item{
-            background-color: #3C3C3C;
-            border-radius: 10px;
-            padding: 50px;
-            margin: 10px 0;
-            color: #fff;
-        }
-
-        .final{
-            display: flex;
-            color: #516B8A;
-            justify-content: space-around;
-            padding: 10px 0;
-            border-top: 1px solid #444;
-        }
-
-        .final div{
-            color: hsl(0, 0%, 100%);
-            padding: 10px 0;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Planner - Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+  /* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 375px;
+  height: 812px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #2f4f6f;
+  color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #243447;
+}
+
+header h1 {
+  font-size: 18px;
+}
+
+header .menu button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #000;
+  overflow-y: auto;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.user-info .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #6c849d;
+}
+
+.search-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-filter input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-filter button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e81b0;
+  color: #fff;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category {
+  text-align: center;
+}
+
+.category img {
+  width: 50px;
+  height: 50px;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.event-card {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+}
+
+.event-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #243447;
+  padding: 10px;
+}
+
+footer button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+}
+.cabeca {
+    height: 16%;
+    background-color: #516B8A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+            font-size: 24px;
+         }
+
+</style>
 <body>
-    <div class="container">
-        <div class="cabeca">
-            <img src="user-icon.png">
-            <div class="user"></div>
-            <div class="menu">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+  <div class="container">
+    <div class="cabeca"></div>
+    <header>
+      <button class="back-button">&#8592;</button>
+      <h1>Event Planner</h1>
+      <div class="menu">
+        <button>&#9776;</button>
+      </div>
+    </header>
+    <main>
+      <div class="user-info">
+        <div class="avatar"></div>
+        <p>Name user</p>
+      </div>
+      <div class="search-filter">
+        <input type="text" placeholder="Search">
+        <button>&#9881;</button>
+      </div>
+      <div class="categories">
+        <div class="category">
+          <img src="balloons.png" alt="Anniversary">
+          <p>Anniversary</p>
         </div>
-        <div class="barra-pesquisa">
-            <input type="text" placeholder="Search...">
-            <img src="search-icon.png" alt="Search Icon">
+        <div class="category">
+          <img src="cheers.png" alt="Fests">
+          <p>Fests</p>
         </div>
-        <div class="categorias">
-            <div>Categoria 1</div>
-            <div>Categoria 2</div>
-            <div>Categoria 3</div>
+        <div class="category">
+          <img src="microphone.png" alt="Show">
+          <p>Show</p>
         </div>
-        <div class="content">
-            <div class="item">Item 1</div>
-            <div class="item">Item 2</div>
-            <div class="item">Item 3</div>
+      </div>
+      <div class="events">
+        <div class="event-card">
+          <img src="event1.jpg" alt="Event Image">
+          <div class="event-details">
+            <p><strong>Name:</strong> Empreendedorismo</p>
+            <p><strong>Local:</strong> Club, Devil</p>
+            <p><strong>Date:</strong> 24/11/2024</p>
+            <p><strong>Detalhes:</strong> sou horrível em pensar</p>
+            <p><strong>Orçamento:</strong> Não existe</p>
+          </div>
         </div>
-        <div class="final">
-            <div>Home</div>
-            <div>Home</div>
-            <div>Home</div>
-            <div>Settings</div>
-            <div>Profile</div>
+        <div class="event-card">
+          <img src="event2.jpg" alt="Event Image">
+          <div class="event-details">
+            <p><strong>Name:</strong> Porra nenhuma</p>
+            <p><strong>Local:</strong> Inferno</p>
+            <p><strong>Date:</strong> 24/11/2024</p>
+            <p><strong>Detalhes:</strong> sou horrível em pensar</p>
+            <p><strong>Orçamento:</strong> Não existe</p>
+          </div>
         </div>
-    </div>
+      </div>
+    </main>
+    <footer>
+      <button>&#8962;</button>
+      <button>&#128197;</button>
+      <button>&#128205;</button>
+      <button>&#10133;</button>
+      <button>&#9733;</button>
+      <button>&#128269;</button>
+    </footer>
+  </div>
 </body>
 </html>

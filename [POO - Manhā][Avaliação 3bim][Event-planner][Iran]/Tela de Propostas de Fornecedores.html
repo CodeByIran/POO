@@ -1,131 +1,254 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Propostas de Fornecedores</title>
-    <style>
-        body {
-            margin: 0;
-            background-color: #333;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            min-height: 100vh;
-            align-items: center;
-            font-family: sans-serif;
-        }
-
-        .container {
-            width: 375px;
-            height: 812px;
-            display: flex;
-            flex-direction: column;
-            background-color: #516B8A;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 16px;
-        }
-
-        .title {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .search-bar {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            background-color: #444;
-            border-radius: 5px;
-            margin-bottom: 16px;
-        }
-
-        .search-icon {
-            margin-right: 8px;
-        }
-
-        .settings-icon {
-            margin-left: 8px;
-        }
-
-        .content {
-            flex: 1;
-            padding: 16px;
-            overflow-y: auto;
-        }
-
-        .card {
-            background-color: #444;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-        }
-
-        .card-info {
-            margin-left: 16px;
-        }
-
-        .card-name {
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .card-age {
-            font-size: 14px;
-            color: #aaa; }
-
-        footer {
-            padding: 16px;
-            text-align: center;
-            background-color: #444;
-        }
-
-        .footer-text {
-            font-size: 12px;
-            color: #aaa;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Planner - Guests</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+  /* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 375px;
+  height: 812px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #2f4f6f;
+  color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #243447;
+}
+
+header h1 {
+  font-size: 18px;
+}
+
+header .menu button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.tables-section, .guests-section, .invitation-section {
+  margin-bottom: 20px;
+}
+
+.table-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.icon {
+  background-color: #6c849d;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.guest-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.guest-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.guest-info {
+  flex: 1;
+}
+
+.add-event {
+  background-color: #1e81b0;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.invitation-section {
+  background-color: #243447;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.invitation-section p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.invitation-section .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.invitation-section .skip,
+.invitation-section .send-out {
+  background-color: #6c849d;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.invitation-section .send-out {
+  background-color: #1e81b0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #243447;
+  border-top: 1px solid #6c849d;
+}
+
+footer button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+footer button:hover {
+  color: #1e81b0;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: #1e81b0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6c849d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e81b0;
+}
+</style>
 <body>
-    <div class="container">
-        <header>
-            <div class="title">Propostas de Fornecedores</div>
-            <div class="settings-icon">⚙️</div>
-        </header>
-        <div class="search-bar">
-            <div class="search-icon">🔍</div>
-            <input type="text" placeholder="Buscar..." style="flex: 1; border: none; background: transparent; color: #fff;">
+  <div class="container">
+    <header>
+      <button class="back-button">&#8592;</button>
+      <h1>Event Planner</h1>
+      <div class="menu">
+        <button>&#x22EE;</button>
+      </div>
+    </header>
+    <main>
+      <div class="tables-section">
+        <h2>Tables</h2>
+        <div class="table-icons">
+          <button class="icon">+</button>
+          <button class="icon">&#9734;</button>
+          <button class="icon">&#128172;</button>
+          <button class="icon">&#8962;</button>
         </div>
-        <div class="content">
-            <div class="card">
-                <div class="card-info">
-                    <div class="card-name">Fornecedor 1</div>
-                    <div class="card-age">Idade: 5 anos</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-info">
-                    <div class="card-name">Fornecedor 2</div>
-                    <div class="card-age">Idade: 3 anos</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-info">
-                    <div class="card-name">Fornecedor 3</div>
-                    <div class="card-age">Idade: 2 anos</div>
-                </div>
-            </div>
+      </div>
+      <div class="guests-section">
+        <h2>Guests</h2>
+        <div class="guest-card">
+          <img src="guest.jpg" alt="Guest Image">
+          <div class="guest-info">
+            <p><strong>Marcio Ferreira da Silva</strong></p>
+            <p>32 anos</p>
+            <button class="add-event">+ Add event</button>
+          </div>
         </div>
-        <footer>
-            <div class="footer-text">© 2023 Propostas de Fornecedores</div>
-        </footer>
-    </div>
+        <div class="guest-card">
+          <img src="guest.jpg" alt="Guest Image">
+          <div class="guest-info">
+            <p><strong>Marcio Ferreira da Silva</strong></p>
+            <p>32 anos</p>
+            <button class="add-event">+ Add event</button>
+          </div>
+        </div>
+        <div class="guest-card">
+          <img src="guest.jpg" alt="Guest Image">
+          <div class="guest-info">
+            <p><strong>Marcio Ferreira da Silva</strong></p>
+            <p>32 anos</p>
+            <button class="add-event">+ Add event</button>
+          </div>
+        </div>
+      </div>
+      <div class="invitation-section">
+        <p>Send out invitations</p>
+        <div class="buttons">
+          <button class="skip">Skip</button>
+          <button class="send-out">Send Out</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <button>&#8962;</button>
+      <button>&#128197;</button>
+      <button>&#128205;</button>
+      <button>&#10133;</button>
+      <button>&#9733;</button>
+      <button>&#128269;</button>
+    </footer>
+  </div>
 </body>
 </html>

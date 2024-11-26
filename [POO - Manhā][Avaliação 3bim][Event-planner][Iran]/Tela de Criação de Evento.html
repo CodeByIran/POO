@@ -1,128 +1,206 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tela de Criação de Evento</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Event Planner</title>
+  <link rel="stylesheet" href=".css">
 </head>
 <style>
-    
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1a1a2e;
-  }
-  
-  .container {
-    width: 375px;
-    height: 812px;
-    background-color: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .cabeca {
-    display: flex;
-    align-items: center;
-    padding: 16px;
-    background-color: #516B8A;
-    color: white;
-  }
+    font-family: Arial, sans-serif;
+}
 
-  
-  .title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .content {
-    flex: 1;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    color: #516B8A;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .campo {
-    margin-bottom: 16px;
-  }
-  
-  .group {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .campo input,
-  .campo textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  button {
-    padding: 12px;
-    background-color: #516B8A;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #3700b3;
-  }
+.container {
+  width: 375px;
+  height: 812px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #2f4f6f;
+  color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #243447;
+}
+
+header h1 {
+  font-size: 18px;
+}
+
+header .menu button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.flex label {
+  flex: 1;
+}
+
+.flex input {
+  flex: 1;
+}
+
+.avatars {
+  display: flex;
+  gap: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #6c849d;
+}
+
+.images {
+  display: flex;
+  gap: 10px;
+}
+
+.image-placeholder {
+  width: 60px;
+  height: 60px;
+  background-color: #6c849d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.selection-button,
+.create-event-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1e81b0;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #243447;
+  padding: 10px;
+}
+
+footer button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+}
 </style>
 <body>
   <div class="container">
-    <div class="cabeca">    
-      <div class="title">
-        Tela de Criação de Evento
+    <header>
+      <button class="back-button">&#8592;</button>
+      <h1>Event Planner</h1>
+      <div class="menu">
       </div>
-    </div>
-
-    <div class="content">
-      <div class="form">
-        <div class="campo">
+    </header>
+    <main>
+      <form>
+        <div class="form-group">
           <label for="event-title">Event title</label>
-          <input type="text" id="event-title" placeholder="Lorem Ipsum is">
+          <input type="text" id="event-title" placeholder="Lorem Ipsum">
         </div>
-        <div class="group">
-          <div class="campo">
-            <label for="event-date">Date</label>
-            <input type="date" id="event-date" value="2023-09-05">
+        <div class="form-group">
+          <label for="event-description">Description</label>
+          <textarea id="event-description" rows="4" placeholder="Lorem Ipsum is simply dummy text..."></textarea>
+        </div>
+        <div class="form-group flex">
+          <label for="event-date">Date</label>
+          <input type="date" id="event-date">
+          <label for="event-time">Time</label>
+          <input type="time" id="event-time">
+        </div>
+        <div class="form-group">
+          <label for="event-place">Place</label>
+          <input type="text" id="event-place" placeholder="Maceió, Vergel">
+        </div>
+        <div class="form-group">
+          <label>Invite People</label>
+          <div class="avatars">
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
           </div>
-          <div class="campo">
-            <label for="event-time">Time</label>
-            <input type="time" id="event-time" value="08:30">
+        </div>
+        <div class="form-group">
+          <label>Dictionary Foreclosures</label>
+          <button class="selection-button">Selection</button>
+        </div>
+        <div class="form-group">
+          <label>Images</label>
+          <div class="images">
+            <div class="image-placeholder"></div>
+            <div class="image-placeholder"></div>
+            <div class="image-placeholder"></div>
           </div>
         </div>
-        <div class="campo">
-          <label for="description">Description</label>
-          <textarea id="event-description" placeholder="Lorem Ipsum isLorem Ipsum is simply dummy te Lorem Ipsum isLorem Ipsum is simply dummy te Lorem Ipsum isLorem Ipsum is simply dummy te Lorem Ipsum isLorem Ipsum is simply dummy te Lorem Ipsum is simply dummy text of the printing and typesetting industry."></textarea>
-        </div>
-        <button type="submit">Criar Evento</button>
-      </div>
-    </div>
+        <button class="create-event-button">Create Event</button>
+      </form>
+    </main>
+    <footer>
+      <button>&#8962;</button>
+      <button>&#128197;</button>
+      <button>&#128205;</button>
+      <button>&#10133;</button>
+      <button>&#9733;</button>
+      <button>&#128269;</button>
+    </footer>
   </div>
 </body>
 </html>
-
-
-

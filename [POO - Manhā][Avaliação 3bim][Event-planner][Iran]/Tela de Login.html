@@ -12,6 +12,7 @@
             align-items: center;
             min-height: 100vh;
             background-color: #1a1a2e;
+            font-family: Arial, sans-serif;
         }
 
         .container {
@@ -22,6 +23,7 @@
             display: flex;
             flex-direction: column;
         }
+
         .content {
             flex: 20;
             padding: 20px;
@@ -38,7 +40,7 @@
             justify-content: center;
             color: white;
             font-size: 24px;
-         }
+        }
 
         .titulo {
             font-size: 24px;
@@ -85,10 +87,15 @@
         }
 
         .esqueceu-senha {
-            font-size:  14px;
+            font-size: 14px;
             color: #007bff;
             text-align: right;
             margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .esqueceu-senha:hover {
+            text-decoration: underline;
         }
 
         .submit-button {
@@ -107,7 +114,7 @@
             background-color: #218838;
         }
 
-        .finaç {
+        .final {
             margin-top: auto;
             text-align: center;
             font-size: 14px;
@@ -118,26 +125,26 @@
 <body>  
     <div class="container">
         <div class="cabeca"></div>
-         <div class="content">
-        <div class="titulo">Tela de Login</div>
-        <form class="form">
-            <div class="input">
-                <label for="email">Email</label>
-                <input type="email" id="email" required>
-            </div>
-            <div class="input">
-                <label for="password">Senha</label>
-                <input type="password" id="password" required>
-            </div>
-            <div class="termo">
-                <input type="checkbox" id="termo">
-                <label for="termo">Termo de Privacidade</label>
-            </div>
-            <a href="#" class="esqueceu-senha">Esqueceu a senha?</a>
-            <button type="submit" class="submit-button">Entrar</button>
-        </form>
-        <div class="final">© 2023 Sua Empresa</div>
-    </div>
+        <div class="content">
+            <div class="titulo">Tela de Login</div>
+            <form class="form">
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="input">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                </div>
+                <div class="termo">
+                    <input type="checkbox" id="termo">
+                    <label for="termo">Aceito o Termo de Privacidade</label>
+                </div>
+                <a href="#" class="esqueceu-senha">Esqueceu sua senha?</a>
+                <button type="submit" class="submit-button">Entrar</button>
+            </form>
+            <div class="final">© 2023 Sua Empresa</div>
+        </div>
     </div>
 </body>
 </html>

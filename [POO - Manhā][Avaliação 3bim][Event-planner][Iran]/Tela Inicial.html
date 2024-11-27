@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event Planner - Dashboard</title>
+  <title>Event Planner - Painel de Controle</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-  /* styles.css */
 * {
   margin: 0;
   padding: 0;
@@ -73,6 +72,7 @@ main {
   height: 50px;
   border-radius: 50%;
   background-color: #6c849d;
+  
 }
 
 .search-filter {
@@ -98,7 +98,8 @@ main {
 
 .categories {
   display: flex;
-  gap: 10px;
+  gap: 45px;
+  padding-left: 28px;
   margin-bottom: 20px;
 }
 
@@ -107,8 +108,10 @@ main {
 }
 
 .category img {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
+  border-radius: 9px;
+  background-color: #1a141434;
 }
 
 .events {
@@ -159,65 +162,64 @@ footer button {
     align-items: center;
     justify-content: center;
     color: white;
-            font-size: 24px;
-         }
+    font-size: 24px;
+}
 
 </style>
 <body>
+
   <div class="container">
-    <div class="cabeca"></div>
-    <header>
-      <button class="back-button">&#8592;</button>
-      <h1>Event Planner</h1>
-      <div class="menu">
-        <button>&#9776;</button>
-      </div>
-    </header>
-    <main>
+    <div class="cabeca">
       <div class="user-info">
         <div class="avatar"></div>
-        <p>Name user</p>
+        <p>Usuário</p>
       </div>
+    </div>
+
+    <main>
       <div class="search-filter">
-        <input type="text" placeholder="Search">
+        <input type="text" placeholder="Pesquisar">
         <button>&#9881;</button>
       </div>
+
       <div class="categories">
         <div class="category">
-          <img src="balloons.png" alt="Anniversary">
-          <p>Anniversary</p>
+          <img src="img/balao-removebg-preview.png" alt="Aniversário">
+          <p>Aniversário</p>
         </div>
         <div class="category">
-          <img src="cheers.png" alt="Fests">
-          <p>Fests</p>
+          <img src="img/taça-removebg-preview.png" alt="Festivais">
+          <p>Festivais</p>
         </div>
         <div class="category">
-          <img src="microphone.png" alt="Show">
+          <img src="img/mic-removebg-preview.png" alt="Show">
           <p>Show</p>
         </div>
       </div>
+
       <div class="events">
         <div class="event-card">
-          <img src="event1.jpg" alt="Event Image">
+          <img src="img/inicial img 1.png" alt="Imagem do Evento">
           <div class="event-details">
-            <p><strong>Name:</strong> Empreendedorismo</p>
-            <p><strong>Local:</strong> Club, Devil</p>
-            <p><strong>Date:</strong> 24/11/2024</p>
-            <p><strong>Detalhes:</strong> sou horrível em pensar</p>
-            <p><strong>Orçamento:</strong> Não existe</p>
+            <p><strong>Nome:</strong> Empreendedorismo</p>
+            <p><strong>Local:</strong> Clube, Devil</p>
+            <p><strong>Data:</strong> 24/11/2024</p>
+            <p><strong>Detalhes:</strong> Evento educacional</p>
+            <p><strong>Orçamento:</strong> Indefinido</p>
           </div>
         </div>
         <div class="event-card">
-          <img src="event2.jpg" alt="Event Image">
+          <img src="img/inical img 2.png" alt="Imagem do Evento">
           <div class="event-details">
-            <p><strong>Name:</strong> Porra nenhuma</p>
-            <p><strong>Local:</strong> Inferno</p>
-            <p><strong>Date:</strong> 24/11/2024</p>
-            <p><strong>Detalhes:</strong> sou horrível em pensar</p>
-            <p><strong>Orçamento:</strong> Não existe</p>
+            <p><strong>Nome:</strong> Nenhum</p>
+            <p><strong>Local:</strong> Indefinido</p>
+            <p><strong>Data:</strong> 24/11/2024</p>
+            <p><strong>Detalhes:</strong> Planejamento em andamento</p>
+            <p><strong>Orçamento:</strong> Indefinido</p>
           </div>
         </div>
       </div>
+      
     </main>
     <footer>
       <button>&#8962;</button>

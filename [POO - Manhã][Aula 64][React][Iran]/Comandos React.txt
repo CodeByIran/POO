@@ -1,0 +1,24 @@
+AULA DE REACT
+
+Comando para verificar versão instalada do node: 
+
+node -v
+
+-------------------------------------------------------------
+
+Comando para criar um projeto react:
+
+npm create-react-app loja-notebooks
+
+-------------------------------------------------------------
+No terminal, entre na pasta loja-notebooks e insira o 
+comando para testa se o projeto está funcionando: 
+
+npm start
+
+Para solucionar o erro web-vitals:
+
+Dar ctrl + c / para encerrar o servidor;
+
+Instalar o web-vitals:
+npm install web-vitals

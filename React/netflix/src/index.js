@@ -4,11 +4,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import SelecaoPerfil from './SelecaoPerfil';
+import NavBar from './NavBar';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <NavBar />
     <SelecaoPerfil /> 
     <App />
   </React.StrictMode>

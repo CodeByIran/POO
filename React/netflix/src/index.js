@@ -6,12 +6,28 @@ import App from './App';
 import SelecaoPerfil from './SelecaoPerfil';
 import NavBar from './NavBar';
 import reportWebVitals from './reportWebVitals';
+import CardPerfil from './CardPerfil';
+
+import chase from './img/chase.webp';
+import marshall from './img/marshall.png';
+import rocky from './img/rocky.png';
+import skye from './img/skye.jpg';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// -------------------------------
+const usuario1 = {nome: 'Alexsander', foto: chase }
+const usuario2 = {nome: 'José', foto: marshall }
+const usuario3 = {nome: 'João', foto: rocky }
+const usuario4 = {nome: 'Maria', foto: skye }
+
+const usuarios = [usuario1, usuario2, usuario3, usuario4];
+// -------------------------------
+
 root.render(
   <React.StrictMode>
     <NavBar />
-    <SelecaoPerfil /> 
+    <SelecaoPerfil listaDeUsuarios={usuarios} /> 
     <App />
   </React.StrictMode>
 );

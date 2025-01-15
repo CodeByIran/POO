@@ -1,30 +1,21 @@
-import React from "react";
-import CardPerfil from "./CardPerfil";
-import BotaoVazado from "./BotaoVazado";
-import './SelecaoPerfil.css';
+import './SelecaoPerfil.css'
+import BotaoVazado from './BotaoVazado'
+import CardPerfil from './CardPerfil'
 
-const SelecaoPerfil = () => {
-  return (
-    <div className="selecao-perfil">
-      <h2>Quem está assistindo?</h2>
-      <div className="cards-container">{
-        <>
-        <CardPerfil />
-        <CardPerfil />
-        <CardPerfil />
-        <CardPerfil />
-        <CardPerfil />
-        </>
-      }
-      </div>
-      <BotaoVazado texto="Continuar" />
-    </div>
-  );
-};
+
+function SelecaoPerfil( {listaDeUsuarios}){
+
+    const listaDeCards = listaDeUsuarios.map(user => <CardPerfil usuario={user}/>);
+
+    return (
+        <div className='selecao-perfil'>
+            <h2 className='titulo'>Quem está assistindo?</h2>
+            <div className='container-cards'>
+              {listaDeCards}
+            </div>
+            <BotaoVazado />
+        </div>
+    );
+}
 
 export default SelecaoPerfil;
-
-
-// {[...Array(5)].map((_, index) => (
-//     <CardPerfil key={index} />
-//   ))}

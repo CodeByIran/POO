@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import SelecaoPerfil from './SelecaoPerfil';
 import NavBar from './NavBar';
-// import MenuLateral from './MenuLateral';
+import MenuLateral from './MenuLateral';
 import reportWebVitals from './reportWebVitals';
 import CardPerfil from './CardPerfil';
 
@@ -28,10 +28,10 @@ const usuarios = [usuario1, usuario2, usuario3, usuario4];
 
 root.render(
   <React.StrictMode>
-    {/* <NavBar /> */}
-    {/* <MenuLateral/> */}
-    {/* <SelecaoPerfil listaDeUsuarios={usuarios} />  */}
-    {/* <App /> */}
+    <NavBar />
+    <MenuLateral/>
+    <SelecaoPerfil listaDeUsuarios={usuarios} /> 
+    <App />
   </React.StrictMode>
 );
 

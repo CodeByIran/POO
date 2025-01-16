@@ -1,24 +1,35 @@
 import './MenuLateral.css';
-import { FaHome } from 'react-icons/fa';
-import { FaCreditCard } from 'react-icons/fa';
-import { FaCheckCircle } from 'react-icons/fa';
-import { FaLaptop } from 'react-icons/fa';
-import { FaUser } from 'react-icons/fa';
+import { MdHomeFilled } from "react-icons/md";
+import { MdCreditCard } from "react-icons/md";
+import { MdCheckCircle } from "react-icons/md";
+import { MdLaptop } from "react-icons/md";
+import { MdPerson } from "react-icons/md";
 
 function MenuLateral() {
     return (
         <div className='menu-lateral'>
-            {/* Add your menu content here */}
-            <a className='link selecionado'> Visão Geral </a>
-            <FaHome /> 
-            <a className='link'> Assinatura </a>
-            <FaCreditCard />
-            <a className='link'> Segurança </a>
-            <FaCheckCircle /> 
-            <a className='link'> Aparelhos   </a>
-            <FaLaptop /> 
-            <a className='link'> Perfis</a>
-            <FaUser /> 
+            <ul className='menu-lista'>
+                <li className='menu-item'>
+                    <MdHomeFilled/>
+                    <a className='menu-link selecionado'>Visão Geral</a>
+                </li>
+                <li className='menu-item'>
+                    <MdCreditCard/>
+                    <a className='menu-link'>Assinatura</a>
+                </li>
+                <li className='menu-item'>
+                    <MdCheckCircle />
+                    <a className='menu-link'>Segurança</a>
+                </li>
+                <li className='menu-item'>
+                    <MdLaptop />
+                    <a className='menu-link'>Aparelhos</a>
+                </li>
+                <li className='menu-item'>
+                    <MdPerson />
+                    <a className='menu-link'>Perfis</a>
+                </li>
+            </ul>
         </div>
     );
 }

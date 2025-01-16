@@ -2,12 +2,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import SelecaoPerfil from './SelecaoPerfil';
-import NavBar from './NavBar';
-import MenuLateral from './MenuLateral';
+
+import SelecaoPerfil from './components/SelecaoPerfil';
+import NavBar from './components/NavBar';
+import MenuLateral from './components/MenuLateral';
 import reportWebVitals from './reportWebVitals';
-import CardPerfil from './CardPerfil';
 
 
 import chase from './img/chase.webp';
@@ -30,8 +29,8 @@ root.render(
   <React.StrictMode>
     <NavBar />
     <MenuLateral/>
-    <SelecaoPerfil listaDeUsuarios={usuarios} /> 
-    <App />
+    <SelecaoPerfil listaDeUsuarios={usuarios} />
+
   </React.StrictMode>
 );
 

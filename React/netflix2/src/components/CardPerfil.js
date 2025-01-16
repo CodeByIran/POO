@@ -1,5 +1,4 @@
 import './CardPerfil.css';
-import perfil from './perfil.png'
 
 function CardPerfil({usuario}){
   return (

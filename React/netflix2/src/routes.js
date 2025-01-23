@@ -6,7 +6,7 @@ function MainRoutes(){
     return(
         <Routes>
             <Route path='/' element={<Profiles/>}/>
-            <Route path='home' element={<Home/>}/>
+            <Route path='/home' element={<Home/>}/>
         </Routes>
     );
 }

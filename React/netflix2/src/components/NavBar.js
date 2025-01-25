@@ -1,22 +1,24 @@
-import '../styles/NavBar.css'
-import logo from '../img/netflix-logo-transparente.png'
+import React from 'react';
+import '../styles/NavBar.css';
+import logo from '../img/netflix-logo-transparente.png';
 import { MdCreditCard } from "react-icons/md";
 
-// As entradas de um componente devem estar entre chaves.
-// Isso é uma exigência do React
-function NavBar(){
-
+function NavBar() {
     return (
-        <div className='nav-bar'>
-            <img className='logotipo' src={logo} />
-            <MdCreditCard />
-            <a className='link selecionado'> Início </a>
-            <a className='link'> Séries </a>
-            <a className='link'> Filmes </a>
-            <a className='link'> Bombando </a>
-            <a className='link'> Minha lista </a>
-            <a className='link'> Navegar por idiomas </a>
-        </div>
+        <nav className='nav-bar'>
+            <div className="nav-left">
+                <img className='logotipo' src={logo} alt="Netflix Logo" />
+                <MdCreditCard className="icon" />
+            </div>
+            <div className="nav-links">
+                <button className='link selecionado'>Início</button>
+                <button className='link'>Séries</button>
+                <button className='link'>Filmes</button>
+                <button className='link'>Bombando</button>
+                <button className='link'>Minha lista</button>
+                <button className='link'>Navegar por idiomas</button>
+            </div>
+        </nav>
     );
 }
 

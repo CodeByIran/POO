@@ -1,19 +1,17 @@
-.movie-card {
-    position: relative;
-    width: 150px;
+.home {
+    background-color: #141414;
+    color: #fff;
+    min-height: 100vh;
   }
   
-  .movie-image {
+  .home .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    border-radius: 5px;
+    z-index: 1000;
   }
   
-  .movie-number {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 1.5rem;
-    color: white;
-    font-weight: bold;
+  .home .carousel {
+    margin-top: 70px;
   }
-  

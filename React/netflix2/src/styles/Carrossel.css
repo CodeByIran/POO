@@ -1,0 +1,15 @@
+.carousel {
+    margin-top: 20px;
+  }
+  
+  .carousel-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+  
+  .carousel-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  

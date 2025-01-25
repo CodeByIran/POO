@@ -1,4 +1,4 @@
-import './NavBar.css'
+import '../styles/NavBar.css'
 import logo from '../img/netflix-logo-transparente.png'
 import { MdCreditCard } from "react-icons/md";
 

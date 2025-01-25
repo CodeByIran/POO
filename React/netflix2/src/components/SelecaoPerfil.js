@@ -1,6 +1,6 @@
-import './SelecaoPerfil.css'
-import BotaoVazado from './BotaoVazado'
-import CardPerfil from './CardPerfil'
+import '../styles/SelecaoPerfil.css'
+import BotaoVazado from '../components/BotaoVazado'
+import CardPerfil from '../components/CardPerfil'
 
 
 function SelecaoPerfil( {listaDeUsuarios}){

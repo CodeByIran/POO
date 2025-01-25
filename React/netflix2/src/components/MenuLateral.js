@@ -1,36 +1,56 @@
-import '../styles/MenuLateral.css';
-import { MdHomeFilled } from "react-icons/md";
-import { MdCreditCard } from "react-icons/md";
-import { MdCheckCircle } from "react-icons/md";
-import { MdLaptop } from "react-icons/md";
-import { MdPerson } from "react-icons/md";
+import './MenuLateral.css'
 
-function MenuLateral() {
-    return (
-        <div className='menu-lateral'>
-            <ul className='menu-lista'>
-                <li className='menu-item'>
-                    <MdHomeFilled/>
-                    <a className='menu-link selecionado'>Visão Geral</a>
-                </li>
-                <li className='menu-item'>
-                    <MdCreditCard/>
-                    <a className='menu-link'>Assinatura</a>
-                </li>
-                <li className='menu-item'>
-                    <MdCheckCircle />
-                    <a className='menu-link'>Segurança</a>
-                </li>
-                <li className='menu-item'>
-                    <MdLaptop />
-                    <a className='menu-link'>Aparelhos</a>
-                </li>
-                <li className='menu-item'>
-                    <MdPerson />
-                    <a className='menu-link'>Perfis</a>
-                </li>
-            </ul>
+import React, { useState, useEffect } from 'react';
+
+import { Link } from "react-router-dom";
+import { PiHouseFill } from "react-icons/pi";
+import { GoCreditCard } from "react-icons/go";
+import { IoShieldCheckmarkOutline } from "react-icons/io5";
+import { MdDevices } from "react-icons/md";
+import { PiScanSmileyLight } from "react-icons/pi";
+
+
+function MenuLateral(){
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch('https://api.sampleapis.com/movies/comedy')
+        .then(response => response.json())
+        .then(data => setData(data));
+    }, []);
+
+  
+    return(
+        <div className="menu-lateral">
+            <Link className="item-menu">
+                <PiHouseFill className='icone' />
+                <span className='texto-menu'>Visão Geral</span>
+            </Link>
+            <Link className="item-menu">
+                <GoCreditCard className='icone' />
+                <span className='texto-menu'>Assinatura</span>
+            </Link>
+            <Link className="item-menu">
+                <IoShieldCheckmarkOutline className='icone' />
+                <span className='texto-menu'>Segurança</span>
+            </Link>
+            <Link className="item-menu">
+                <MdDevices className='icone' />
+                <span className='texto-menu'>Aparelhos</span>
+            </Link>
+            <Link className="item-menu">
+                <PiScanSmileyLight className='icone' />
+                <span className='texto-menu'>Perfis</span>
+            </Link>
+            <div>
+                {data.map(item => (
+                    
+                    <img src={item.posterURL} />
+                ))}
+            </div>
         </div>
+
     );
 }
 

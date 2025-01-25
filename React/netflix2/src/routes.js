@@ -5,9 +5,11 @@ import Home from './pages/Home'
 function MainRoutes(){
     return(
         <Routes>
-            <Route path='/' element={<Profiles/>}/>
-            <Route path='/home' element={<Home/>}/>
+            <Route path='/' element={<Profiles/>} />
+            <Route path='/home' element={<Home />} />
+
         </Routes>
     );
 }
+
 export default MainRoutes;

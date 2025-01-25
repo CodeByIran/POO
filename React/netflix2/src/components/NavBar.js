@@ -1,24 +1,22 @@
-import React from 'react';
-import '../styles/NavBar.css';
-import logo from '../img/netflix-logo-transparente.png';
-import { MdCreditCard } from "react-icons/md";
+import './NavBar.css'
+import logo from '../img/netflix-logo-transparente.png'
+import { Link } from 'react-router-dom';
 
-function NavBar() {
+
+function NavBar( ){
+
+
     return (
-        <nav className='nav-bar'>
-            <div className="nav-left">
-                <img className='logotipo' src={logo} alt="Netflix Logo" />
-                <MdCreditCard className="icon" />
-            </div>
-            <div className="nav-links">
-                <button className='link selecionado'>Início</button>
-                <button className='link'>Séries</button>
-                <button className='link'>Filmes</button>
-                <button className='link'>Bombando</button>
-                <button className='link'>Minha lista</button>
-                <button className='link'>Navegar por idiomas</button>
-            </div>
-        </nav>
+        <div className='nav-bar'>
+            <img className='logotipo' src={logo} />
+            <Link className='link' to={'/home'}>Início</Link>
+            <Link className='link' to={'/'}>Filmes</Link>
+            <Link className='link' to={'/'}>Bombando</Link>
+            <Link className='link' to={'/'}>Minha lista</Link>
+            <Link className='link' to={'/'}>Navegar por idiomas</Link>
+            
+            
+        </div>
     );
 }
 

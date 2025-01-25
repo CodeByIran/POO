@@ -1,5 +1,6 @@
 .home {
-  background-color: black;
+  background-image: url("../img/background.webp");
+  background-repeat: no-repeat;
   color: white;
   min-height: 100vh;
 }

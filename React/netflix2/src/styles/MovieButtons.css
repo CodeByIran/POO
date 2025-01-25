@@ -1,0 +1,46 @@
+.movie-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background-color: #141414;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .watch-button {
+    background-color: #e50914;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .info-button {
+    background-color: #4d4d4d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .play-icon {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  
+  .info-icon {
+    font-size: 24px;
+    margin-right: 8px;
+  }

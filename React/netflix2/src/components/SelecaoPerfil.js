@@ -16,6 +16,6 @@ function SelecaoPerfil( {listaDeUsuarios}){
             <BotaoVazado />
         </div>
     );
-}
+}   
 
 export default SelecaoPerfil;

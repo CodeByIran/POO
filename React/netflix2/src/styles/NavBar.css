@@ -1,0 +1,49 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:last baseline;
+  padding: 0 20px;
+  background-color: #141414;
+  color: #ffffff;
+  height: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* reduzimos o gap para 10px */
+}
+.logo{
+  width: 100px;
+}
+.nav-bar .nav-left img {
+  width: 150px; /* aumentamos o tamanho do logotipo */
+  height: 70px; /* aumentamos o tamanho do logotipo */
+  object-fit: contain;
+}
+
+.nav-bar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 5px adicionamos um margin-left para afastar os botões da logo
+}
+
+.nav-bar .nav-links button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-bar .nav-links button.selecionado {
+  color: #e50914;
+}
+
+.nav-bar .nav-links button:hover {
+  color: #cccccc;
+}

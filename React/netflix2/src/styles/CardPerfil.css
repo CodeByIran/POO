@@ -6,9 +6,7 @@
 
     width: fit-content;
 
-    /* Para tirar o sublinhado do link: */
-    text-decoration: none;
-    
+    /* border: solid 2px red; */
 }
 
 .card-perfil:hover > .foto{

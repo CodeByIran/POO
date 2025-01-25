@@ -1,15 +1,26 @@
-// 1ª seção: imports
-// O ./ é para indicar que o arquivo está na mesma pasta.
-import './BotaoVazado.css'
+// 1° seção: imports
+//o ./ é para indicar que o arquivo está na mesma pasta.
+import '../styles/BotaoVazado.css'
 
-// 2ª seção: o componente
+// 2° seção: o componente
 function BotaoVazado(){
-    return (
-            <span className='botao-vazado'>
-                GERENCIAR PERFIS
-            </span>
+    return(
+        <span className='botao-vazado'>
+            GERENCIAR PERFIS
+        </span>
     );
 }
 
-// 3ª seção: a exportação
+//3° seção: a exportação
 export default BotaoVazado;
+
+
+
+
+
+
+
+
+
+
+

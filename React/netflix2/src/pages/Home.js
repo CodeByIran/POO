@@ -70,9 +70,7 @@ const movies4 = [
   { image: you },
 
   { image: house },
-  { image: mind},
-  { image: house },
-  { image: mind},
+
 ];
 
 const Home = () => {

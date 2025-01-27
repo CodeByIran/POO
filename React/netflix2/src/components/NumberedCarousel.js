@@ -3,7 +3,7 @@ import "../styles/carousel.css";
 
 const NumberedCarousel = ({ title, items }) => {
   return (
-    <div className="carousel-container">
+    <div className="numbered-carousel">
       <h2 className="carousel-title">{title}</h2>
       <div className="carousel-fixed">
         {items.map((item, index) => (

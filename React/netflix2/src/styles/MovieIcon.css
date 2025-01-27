@@ -1,0 +1,60 @@
+.logo{
+    /* width: 35px; 
+    width: 50px;
+    height: auto;
+    margin-bottom: 8px; */
+
+    width: 600px;
+
+}
+
+.movie-icon {
+    display: flex;
+    
+    align-items: center;
+    margin-left: 20px;   /* Afasta da borda esquerda */
+    margin-top: 10px;
+    position: relative;
+    left: 50px;
+    /* left: 50px; Move o contêiner 50px para a direita */
+    top: 230px;  /* Move o contêiner 20px para baixo */
+
+    
+}
+
+.movie-icon .logo {
+    margin-right: 8px;
+}
+
+.movie-icon .movie-name {
+    font-family: 'Roboto', sans-serif; /* Fonte com estilo mais fino */
+    font-size: 18px;
+    font-weight: 100;  /* Peso fino */
+    color: #fff;  /* Cor branca, você pode mudar conforme necessário */
+}
+
+.movie-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.movie-title {
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;       /* Tamanho grande para "A GRANDE" */
+    font-weight: 700;      /* Peso mais forte para destaque */
+    color: #fff;           /* Cor branca */
+    text-transform: uppercase;
+}
+
+
+.movie-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;       /* Tamanho menor para "DESCOBERTA" */
+    font-weight: 300;      /* Peso mais leve */
+    color: #fff;           /* Cor branca */
+    text-transform: uppercase;
+    margin-top: 5px;       /* Espaço entre "A GRANDE" e "DESCOBERTA" */
+}
+    

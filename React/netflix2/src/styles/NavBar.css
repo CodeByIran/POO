@@ -4,10 +4,10 @@
   align-items: center;
   justify-content:last baseline;
   padding: 0 20px;
-  background-color: #14141400;
+  background-color: #141414;
   color: #ffffff;
   height: 70px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgb(0, 0, 0);
 }
 
 .nav-bar .nav-left {
@@ -16,7 +16,7 @@
   gap: 10px; /* reduzimos o gap para 10px */
 }
 .logo{
-  width: 100px;
+  width: 700px;
 }
 .nav-bar .nav-left img {
   width: 150px; /* aumentamos o tamanho do logotipo */

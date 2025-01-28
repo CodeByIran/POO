@@ -35,35 +35,48 @@
     transform: scale(1.05);
   }
   
-  /* .carousel-overlay {
+   .carousel-overlay {
     position: absolute;
     bottom: 10px;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0);
     color: white;
     text-align: center;
     padding: 5px;
     font-size: 14px;
-  } */
+  } 
 
 
-  /* .carousel-number {
+   .carousel-number {
     position: absolute;
     
-    left: -30px;
+    /* left: -30px; */
     
     font-size: 100px;
     font-weight: bold;
     color: #000000;
-  } */
-  
+    
+  } 
+   
   .numbered-carousel {
     margin: 20px;
     padding: 26px;
+    /* gap: -15px; */
     background-color: rgba(0, 0, 0, 0.37);
     color: white;
-    border: 1px solid #00ec33;
+
+    text-shadow: 
+    4px 4px 0 #3c3d3c,  /* Mais grosso no canto superior esquerdo */
+    -4px 4px 0 #3c3d3c, /* Mais grosso no canto inferior esquerdo */
+    4px -4px 0 #3c3d3c, /* Mais grosso no canto superior direito */
+    -4px -4px 0 #3c3d3c,/* Mais grosso no canto inferior direito */
+    0 4px 0 #3c3d3c,    /* Mais grosso no canto superior */
+    0 -4px 0 #3c3d3c,   /* Mais grosso no canto inferior */
+    4px 0 0 #3c3d3c,    /* Mais grosso no canto direito */
+    -4px 0 0 #3c3d3c;   /* Mais grosso no canto esquerdo */
+  
+  pointer-events: none; 
 
   }
   
@@ -74,31 +87,33 @@
   
   .numbered-carousel .carousel-fixed {
     display: flex;
-    gap: 180px;
-    overflow-x: auto; /* Permite rolagem horizontal */
-    scroll-behavior: smooth; /* Suaviza a rolagem */
-    
+    transform: scale(1.05);
+    /* overflow-x: auto;
+    scroll-behavior: smooth;  */
   }
   
   .numbered-carousel .carousel-item {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 15px;
 
     width: 200px; /* Largura mais estreita para imagens em pé */
     height: 300px; /* Altura maior para manter a proporção vertical */
+    
+    margin-left: 250px;
   }
   
   .numbered-carousel .carousel-number {
     position: absolute;
-    top: 40%; /* Centraliza verticalmente */
-    left: -24%; /* Centraliza horizontalmente */
+    top: 46%; /* Centraliza verticalmente */
+    left: -32%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta alinhamento */
     font-size: 400px; /* Tamanho grande */
     font-weight: bold;
+    border-color: #00ec33;
     color: rgb(0, 0, 0); /* Transparente e claro para destaque */
-    z-index: 2; /* Garante que fique acima do fundo */
     pointer-events: none; /* Impede que interfira no clique */
   }
   
@@ -110,8 +125,9 @@
     z-index: 1; /* Fica atrás do número */
     position: relative;
     transition: transform 0.3s ease-in-out;
+    margin-left: 4  00px;
   }
-  
+
   .numbered-carousel .carousel-item:hover .carousel-image {
     transform: scale(1.05);
   }

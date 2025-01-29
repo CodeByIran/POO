@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/NavBar.css';
 import logo from '../img/netflix-logo-transparente.png';
-
+import { MdAccountCircle } from "react-icons/md";
+import { Link } from 'react-router-dom';
 // import { MdCreditCard } from "react-icons/md";
 
 function NavBar() {
@@ -19,8 +20,15 @@ function NavBar() {
                 <button className='link'>Minha lista</button>
                 <button className='link'>Navegar por idiomas</button>
             </div>
+             <Link to="/Account" className="account-button">
+                  <MdAccountCircle className="icon" />
+                  <span className="text">Conta</span>
+                 
+                </Link>
         </nav>
     );
 }
+
+
 
 export default NavBar;

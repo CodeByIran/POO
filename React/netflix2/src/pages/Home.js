@@ -6,6 +6,7 @@ import TitleComponent from "../components/TitleComponent";
 import MovieButtons from '../components/MovieButtons';
 import Carousel from "../components/Carousel";
 import NumberedCarousel from "../components/NumberedCarousel";
+import AudioControl from "../components/AudioControl";
 import "./Home.css";
 import machos from '../img/movie-img/machos.jpg';
 import solteiros from '../img/movie-img/solteiros.jpg';
@@ -25,48 +26,46 @@ import black from '../img/movie-img/black.jpg';
 import you from '../img/movie-img/you.jpg';
 
 
-
-// Lista fixa de filmes para os carrosséis
 const movies1 = [
-  {  image: machos },
+  { image: machos },
   { image: solteiros },
   { image: round },
-  {  image: guerra },
+  { image: guerra },
 
   { image: house },
-  { image: mind},
+  { image: mind },
   { image: house },
-  { image: mind},
+  { image: mind },
 ];
 
 const movies2 = [
   { image: breaking },
-  {  image: stranger },
-  {  image: dark },
+  { image: stranger },
+  { image: dark },
   { image: narco },
 
   { image: house },
-  { image: mind},
+  { image: mind },
   { image: house },
-  { image: mind},
+  { image: mind },
 ];
 
 const movies3 = [
   { image: peaky },
-  {  image: better },
+  { image: better },
   { image: house },
-  { image: mind},
+  { image: mind },
 
   { image: house },
-  { image: mind},
+  { image: mind },
   { image: house },
-  { image: mind},
+  { image: mind },
 ];
 
 const movies4 = [
-  {  image: the },
-  {  image: theCrow },
-  {  image: black },
+  { image: the },
+  { image: theCrow },
+  { image: black },
   { image: you },
 
   { image: house },
@@ -80,8 +79,8 @@ const Home = () => {
       <MovieIcon />
       <TitleComponent />
       <MovieButtons />
+      <AudioControl />
 
-      {/* uma div para separar os carrosséis */}
       <div className="carousel-section">
         <Carousel title="Séries Estrangeiras Dubladas" items={movies1} />
         <Carousel title="Top Séries de Drama" items={movies2} />

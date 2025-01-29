@@ -2,10 +2,10 @@
   background-image: url("../img/background.webp");
   background-repeat: no-repeat;
   overflow-y: auto;
-  background-size: cover; /* Faz a imagem preencher toda a tela */
-  background-position: center; /* Centraliza a imagem */
-  height: 100vh; /* Faz a div ocupar 100% da altura da tela */
-  width: 100vw; /* Garante que cubra toda a largura */
+  background-size: cover; 
+  background-position: center;
+  height: 100vh; 
+  width: 100vw; 
   display: flex;
   flex-direction: column;
   color: white;
@@ -13,9 +13,9 @@
 }
 
 .carousel-section {
-  margin-top: 360px; /* Espaço entre os botões e os carrosséis */
+  margin-top: 360px; 
   display: flex;
   flex-direction: column;
-  gap: 30px; /* Espaço entre os carrosséis */
+  gap: 30px; 
   
 }

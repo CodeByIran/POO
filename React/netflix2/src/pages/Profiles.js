@@ -1,18 +1,20 @@
 import './Profiles.css'
 import SelecaoPerfil from '../components/SelecaoPerfil';
 
-import chase from '../img/chase.webp';
-import marshall from '../img/marshall.png';
-import rocky from '../img/rocky.png';
-import skye from '../img/skye.jpg';
+import icon1 from '../img/icon1.png';
+import icon2 from '../img/icon2.jpg';
+import icon3 from '../img/icon3.png';
+import icon4 from '../img/icon4.png';
+import icon5 from '../img/addbg.png';
 
 function Profiles (){
     // -----------------------------------
-    const usuario1 = {nome: 'Alexsander', foto: chase }
-    const usuario2 = {nome: 'José', foto: marshall }
-    const usuario3 = {nome: 'João', foto: rocky }
-    const usuario4 = {nome: 'Maria', foto: skye }
-    const usuarios = [usuario1, usuario2, usuario3, usuario4];
+    const usuario1 = {nome: 'Alexsander', foto: icon1 }
+    const usuario2 = {nome: 'José', foto: icon2 }
+    const usuario3 = {nome: 'João', foto: icon3 }
+    const usuario4 = {nome: 'Maria', foto: icon4 }
+    const usuario5 = {nome: 'Adicionar perfil', foto: icon5 }
+    const usuarios = [usuario1, usuario2, usuario3, usuario4, usuario5];
     // -----------------------------------
 
     return(

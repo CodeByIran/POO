@@ -13,14 +13,14 @@
 .nav-bar .nav-left {
   display: flex;
   align-items: center;
-  gap: 10px; /* reduzimos o gap para 10px */
+  gap: 10px; 
 }
 .logo{
   width: 700px;
 }
 .nav-bar .nav-left img {
-  width: 150px; /* aumentamos o tamanho do logotipo */
-  height: 70px; /* aumentamos o tamanho do logotipo */
+  width: 150px; 
+  height: 70px; 
   object-fit: contain;
 }
 
@@ -46,4 +46,21 @@
 
 .nav-bar .nav-links button:hover {
   color: #ffffff;
+}
+
+.account-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: bold;
 }

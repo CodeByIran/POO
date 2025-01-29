@@ -1,9 +1,11 @@
+
+
 .carousel-container {
     margin: 20px;
-    padding: 26px;
-    background-color: rgba(0, 0, 0, 0.37);
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.37); */
     color: white;
-    border: 1px solid #00ec33;
+    /* border: 1px solid #00ec33; */
   }
   
   .carousel-title {
@@ -19,7 +21,7 @@
   
   .carousel-item {
     position: relative;
-    width: 350px; /* Defina um tamanho fixo */
+    width: 350px; /* Definir um tamanho fixo */
     flex-shrink: 0;
   }
   
@@ -35,7 +37,7 @@
     transform: scale(1.05);
   }
   
-   .carousel-overlay {
+   /* .carousel-overlay {
     position: absolute;
     bottom: 10px;
     left: 0;
@@ -45,7 +47,7 @@
     text-align: center;
     padding: 5px;
     font-size: 14px;
-  } 
+  }  */
 
 
    .carousel-number {
@@ -62,8 +64,8 @@
   .numbered-carousel {
     margin: 20px;
     padding: 26px;
-    /* gap: -15px; */
-    background-color: rgba(0, 0, 0, 0.37);
+ 
+    /* background-color: rgba(238, 70, 70, 0.37); */
     color: white;
 
     text-shadow: 
@@ -88,6 +90,7 @@
   .numbered-carousel .carousel-fixed {
     display: flex;
     transform: scale(1.05);
+    /* gap: 1px; */
     /* overflow-x: auto;
     scroll-behavior: smooth;  */
   }
@@ -97,38 +100,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    /* gap: 45p; */
 
-    width: 200px; /* Largura mais estreita para imagens em pé */
-    height: 300px; /* Altura maior para manter a proporção vertical */
+    width: 200px; 
+    height: 300px; 
     
     margin-left: 250px;
   }
   
   .numbered-carousel .carousel-number {
     position: absolute;
-    top: 46%; /* Centraliza verticalmente */
-    left: -32%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta alinhamento */
-    font-size: 400px; /* Tamanho grande */
+    top: 52%; 
+    left: -32%; 
+    transform: translate(-50%, -50%); 
+    font-size: 400px; 
     font-weight: bold;
     border-color: #00ec33;
-    color: rgb(0, 0, 0); /* Transparente e claro para destaque */
-    pointer-events: none; /* Impede que interfira no clique */
+    color: rgb(0, 0, 0);
+    pointer-events: none; 
   }
   
   .numbered-carousel .carousel-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta a imagem para preencher sem distorcer */
+    object-fit: cover; 
     border-radius: 5px;
-    z-index: 1; /* Fica atrás do número */
+    z-index: 1; 
     position: relative;
     transition: transform 0.3s ease-in-out;
-    margin-left: 4  00px;
+    margin-left: -63px;
+    
   }
 
   .numbered-carousel .carousel-item:hover .carousel-image {
-    transform: scale(1.05);
+     transform: scale(1.05);
   }
-  
+   

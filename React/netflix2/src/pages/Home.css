@@ -1,7 +1,9 @@
 .home {
   background-image: url("../img/background.webp");
   background-repeat: no-repeat;
-  overflow-y: auto;
+  overflow-x: hidden;
+  /* overflow-y: visible; */
+  width: 100%; 
   background-size: cover; 
   background-position: center;
   height: 100vh; 
